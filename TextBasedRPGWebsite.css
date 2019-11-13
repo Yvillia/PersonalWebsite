@@ -380,7 +380,7 @@
 						
 					}
 					
-					/*Logo Styling*/
+					/*Styling*/
 					.logoClass{
 						
 						display: flex;
@@ -564,7 +564,7 @@
 					
 					width: 100%;
 					height: auto;
-					background-image: url("downloadBackground.png");
+					background-image: url("DownloadBackground.png");
 					background-size: cover;
 					background-repeat: no-repeat;
 					font-family: Georgia, serif;
