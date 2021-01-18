@@ -3,8 +3,13 @@ html {
     box-sizing: border-box;
     margin:0;
     padding:0;
+<<<<<<< HEAD
     /* overflow-x: hidden; */
     background-image: url(../images/DownloadBackground.png);
+=======
+    overflow-x: hidden;
+    background-image: url(../images/DownloadBackground2.png);
+>>>>>>> 5b295393283eb93e0d5deeeef0624e02f80b17ee
 
 }
 
@@ -372,4 +377,8 @@ footer .row div:nth-child(3) p br {
         display: none;
         
     }
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 5b295393283eb93e0d5deeeef0624e02f80b17ee
