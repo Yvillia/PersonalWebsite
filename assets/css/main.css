@@ -221,7 +221,7 @@ footer .row div:nth-child(3) p br {
     justify-content: space-between;
 }
 
-#shortcut_title {
+#shortcuttitle {
     text-decoration: underline; 
     color: white; 
     margin-left: auto; 
@@ -278,8 +278,8 @@ footer .row div:nth-child(3) p br {
     footer .row div:nth-child(3) p br{
         display: unset;
     }
-
-    #shortcut_title {
+    
+    #shortcuttitle  {
         font-size: 160%;
         padding-left: 20%;
     }
