@@ -1,0 +1,723 @@
+<style>
+
+			/*Total Page Settings*/
+				html{
+					box-sizing: border-box;
+					margin:0;
+					padding:0;
+					overflow-x: hidden;
+				}
+				
+
+				body {
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					min-height: 100%;
+					overflow-x: hidden;
+					position: absolute;
+				}
+				
+			/*Generic Flex Box Rules*/
+				.column{
+					
+					display: flex;
+					flex-direction: column;	
+				}
+				
+				.row{
+					
+					display: flex;
+					flex-direction: row;
+					
+				}
+				
+			/*Generic Style Rules*/
+			
+				.titleText{
+					
+					font-size: 200%;
+					font-family: Georgia, serif;
+					text-align: center;
+					
+				}
+				
+					.bodyText{
+					
+					font-size: 100%;
+					font-family: Georgia, serif;
+					padding: 4%;
+				    font-weight: bold;
+
+				}
+
+			/*General List Stylings*/
+				.list{
+					
+					list-style: none;
+					list-style-image: url('bullet.png');
+					margin-left: 3%;
+					
+				}
+				
+				.list ul{
+					
+					white-space: pre-wrap;
+					
+				}
+					
+				.sublist li{
+					
+					list-style: none;
+					list-style-image: url('subBullet.png');
+					margin: -2%;
+					
+				}
+				
+			/*Top Button Settings*/
+				.buttonGrid{
+					
+				
+					background-color: black;
+					width: 100%;
+					
+				}
+				
+				.topButtons{
+					
+					border: none;
+					background-color: black;
+					color: white;
+					font-size: 20px;
+					font-family: Georgia, serif;
+					padding: 0.5em 1.3em;
+					position: relative;
+					white-space: nowrap;
+					margin-right: 1.0em;
+					float: left;
+					text-decoration: none;
+					
+				}
+					
+				.topButtons:hover{
+					
+					border: none;
+					background-color: white;
+					color: black;
+					padding: 0.5em 1.3em;
+					position: relative;
+					white-space: nowrap;
+			
+				}
+				
+				#login{
+			
+					float: right;
+					
+				}
+				
+				/*Header Settings*/
+				header{
+					
+					background-color: black;
+					
+				}
+				
+			/*Arrows/Dots Banner Control*/
+				/*This Creates the Inline-Block for the Arrows and Dots*/
+				.navrow{
+					
+					display: inline-block;
+					text-align: center;
+					padding: 2em;
+					width: 100%;
+					height: auto;
+					
+					/*TEMPORARILY DISABLED*/
+					display:none;
+
+				}
+				
+				/*This is the Arrow*/
+				i{
+				    border: solid white;
+					border-width: 0 2px 2px 0;
+					display: inline-block;
+					padding: 1em;
+				}
+
+				i:hover{
+					
+					border: solid gray;
+					border-width: 0 2px 2px 0;
+					
+					
+				}
+				
+				/*Makes the Arrow Face Right*/
+				.right{
+					
+					transform: rotate(-45deg);
+					
+				}
+				
+				/*Makes the Arrow Face Left*/
+				.left{
+					
+					transform: rotate(135deg);
+				}
+				
+				/*Forms the Dots*/
+				.circle {
+					
+					width: 15px;
+					height: 15px;
+					background-color: orange;
+					border-radius: 50%;
+				    display: inline-block;
+					margin-bottom: 1%;
+					margin-right: 2%;
+					margin-left: 2%;
+					
+					
+				}
+				
+				.circle:hover {
+					
+					width: 20px;
+					height: 20px;
+					background-color: cyan;
+					
+				}
+				
+			/*Banner and Banner Animation*/
+				.bannerFrame{
+					
+					display: flex;
+					width: 398%;
+					min-width: 0px;
+					height: auto;
+					flex-grow: 0;
+					margin-top: 5%;
+					margin-bottom: 5%;
+					
+		
+				}
+				
+				.banner{
+					
+						display: inline-block;
+						border: 10px ridge indigo;
+						position: relative;
+						width: 100%;
+						height: auto;
+						animation-name: slideranimation;
+						animation-duration: 5s;
+						animation-iteration-count: infinite;
+						padding-right: 5%;
+						
+
+				} 
+					
+				@keyframes slideranimation{
+					75%{left: 0%;}
+					100%{left: -100%;}
+				}
+					
+				
+			/*Middle Page Segment*/
+				
+				nav{
+					
+					padding: 1%;
+					background-image: url('nav.png');		
+					background-size: cover;
+					width: 100%;
+			
+				}
+				
+				.events, .announcements{
+					
+					border: 5px solid;
+					border-image: url('background.png') 25% round;
+					margin-right: 2%;
+					background-color: #fceec5;
+					overflow-y: auto;
+					overflow-x: hidden;
+					text-overflow: ellipsis;
+					height: 40em;
+					font-family: Georgia, serif;
+			
+				}
+				
+				.iframeContainer{
+					
+					overflow: hidden;
+					height: 40em;
+					
+				}
+				
+				iframe{
+
+					width: 100%;
+					height: 100%;
+					border: none;
+					
+				}
+				
+				.eventUpcoming, .eventCurrent, .eventPast{
+					
+					overflow: auto;
+					margin-left: -5%;
+				}
+				
+				/*Event Details Segment*/
+					.events{
+						
+						width: 35%;
+				
+					}
+					
+					/*Tabs in Event Details Section*/
+					.tabpane{
+							
+						display: flex;
+						border-bottom: 5px solid;
+						border-image: url('background.png') 25% round;
+					
+					}
+					
+					.tabpane a{
+						
+						background-color: #e0dede;
+						color: gray;
+						padding: 3% 3% 3% 3%;
+						border-right: 5px solid;
+						border-left: 5px solid;
+						border-image: url('background.png') 25% round;
+						width: 100%;
+						height: auto;
+						font-size: 100%;
+						text-align: center;
+						text-decoration: none;
+						
+					}
+					
+					
+					.tabpane a:hover{
+						
+						background-color: gray;
+						color: white;
+						
+					}
+			
+					
+				/*General Company Announcement Segment*/
+					.announcements{
+						
+						width: 65%;	
+						
+					}
+					
+				/*Footer Section*/
+				
+					footer{
+						
+						position: relative;
+						background-color: black;
+						box-shadow: 0 50vh 0 50vh #000;
+						background-size: 100%;
+						z-index: 10;
+						
+					}
+				
+					/*Links to Other Page Section*/
+					.links{
+						
+						display: flex;
+						flex-direction: column;
+						margin: 5%;
+						justify-content: space-between;
+						align-items: center;
+						white-space: nowrap;
+						width: 5%;
+						z-index: 1;
+						
+					}
+					
+					.link{
+						
+	
+						border-radius: inherit;
+						justify-content: space-between;
+						padding-top: 5%;
+						padding-bottom: 5%;
+						font-size: 130%;
+						font-family: Georgia, serif;
+						z-index: 1;
+						
+					}
+					
+					
+					/*Company Members Acknowledgement*/
+					.honor{
+						
+						display: flex;
+						border: none;
+						background-image: inherit;
+						color: white;
+						width: 30%;
+
+					}
+					
+					.honor {
+						
+						display: inline-block;
+						font-size: 120%;
+						font-family: Georgia, serif;
+						margin-left: 2em;
+						white-space: nowrap;
+						
+					}
+					
+					/*Styling*/
+					.logoClass{
+						
+						display: flex;
+						background-image: inherit;
+						width:65%;
+						height: auto;
+						margin: auto;
+						
+					}
+					
+					#logo{
+						
+						height: 100%;
+						width: 35%;
+						min-width: 200px;
+						
+					}	
+				
+				/*Media Queries*/
+					@media(max-width: 870px){
+					
+						
+						.tabpane button{
+							
+							font-size: 85%;
+							
+						}
+						
+						#login{
+							
+							float: left;
+						}
+						
+					}
+				
+					
+					@media(max-width: 750px){
+						
+						.tabpane button{
+							
+							font-size: 56%;
+						
+						}
+						
+						.navrow{
+							
+							display: none;
+						}
+						
+						/*When the Screen Gets This Small,
+						  the Navigation Bar will Disappear and
+						  the Banner Will Function Automatically */
+						.banner{
+					
+						position: relative;
+						width: 100%;
+						height: auto;
+						animation-name: slideranimation;
+						animation-duration: 5s;
+						animation-iteration-count: infinite;
+						flex: 1 1 0;
+						min-width: 0;
+						overflow: hidden;
+						
+						} 
+							
+						@keyframes slideranimation{
+							75%{left: 0%;}
+							100%{left: -100%;}
+						}
+						
+						.logoClass{
+							
+							display: none;
+							
+						}
+						
+						.links{
+							
+							padding-left: 5%;
+							
+						}
+						
+					}
+				
+					@media(max-width: 500px){
+						
+						footer .row div:nth-child(2){
+							
+							display: none;
+						}
+						
+						.honor, .links{
+							
+							margin-left: 2em;
+							padding-left: 5%;
+							font-size: 100%;
+							
+						}
+						
+								.container{
+							
+							flex-direction: column;
+							
+						}
+						
+					}
+				
+					@media(max-width: 400px){
+	
+						.homeC{
+			
+							flex-direction: column;
+							background-color: black;
+							justify-content: space-between;
+							align-items: space-between;
+							
+						}
+						
+						.home{
+							
+							border: ridge;
+							background-color:  #c48b2f;
+							color: white;
+							font-size: 24px;
+							width: 20%;
+							text-align: left;
+							margin-top: 2.0em;
+							margin-left: 0.5em;
+							padding-left: 10%;
+							padding-right: 25%;
+							border-radius: 1em;
+							flex-direction: column;
+							z-index: 10;
+								
+						}
+						
+						.home:hover{
+					
+							border: none;
+							background-color: white;
+							color: black;
+							margin-top: 2.0em;
+							margin-left: 0.5em;
+							padding-left: 10%;
+							padding-right: 25%;
+							border-radius: 1em;
+							position: relative;
+							white-space: nowrap;
+					
+						}
+					
+						.hHeader{
+							
+							height: 100vh;
+						}
+						
+						.banner{
+							
+							display: none;
+							
+						}
+						
+						.hNav{
+							
+							display: none;
+						}
+						
+						.hFooter{
+							
+							display: none;
+							
+						}
+						
+				
+
+					}
+					
+			/*Background For Non-Main Pages*/
+				.dlNav, .suNav, .fNav, .aNav, .lNav, .hNav{
+					
+					width: 100%;
+					height: auto;
+					background-image: url("DownloadBackground.png");
+					background-size: cover;
+					background-repeat: no-repeat;
+					font-family: Georgia, serif;
+					
+				}
+			
+			/*Standard Containers for Non-Main Pages*/
+				.container{
+					
+					border: 6px solid;
+					border-image: url('background.png') 25% round;
+					margin-right: 2%;
+					background-color: #fceec5;
+					overflow-y: auto;
+					overflow-x: hidden;
+					text-overflow: ellipsis;
+					font-family: Georgia, serif;
+					margin-bottom: 3%;
+					
+				}
+				
+			
+			
+			/*Download Screen CSS*/	
+				.DLIST{
+					
+					list-style:none;
+					font-size: 105%;
+					
+				}
+				
+				.DLIST li{
+					
+					padding: 1.1%;
+					color: black;
+					
+				}
+					
+				.DLIST a{
+
+					text-decoration: none;
+					color: blue;
+					font-weight: bold;
+				
+				}
+				.DLIST a:hover{
+					
+					text-decoration: none;
+					color: indigo;
+					
+				}
+				
+				.list h3{
+					
+					margin-bottom: 1%;
+					
+				}
+				
+			/*Support Us Page CSS*/
+				.externalReferences{
+					
+					padding: 4%;
+					text-align: center;
+					justify-content: space-between;
+					font-size: 140%;
+					
+				}
+				
+			/*About Page*/
+				.file{
+					
+					display: flex;
+					background-color: white;
+					width: 60%;
+					border: 4px ridge black;
+					padding: 4%;
+					margin: 4% auto 4% auto;
+					
+				}
+				
+			/*Login Page CSS*/
+				input[type="text"]{
+					
+					padding: 1%;
+					margin: 1%;
+					width: 50%;
+					font-family: Georgia, serif;
+					
+				}
+				
+				input[type="submit"]{
+					
+					padding: 0.5%;
+					margin-left: 80%;
+					width: 20%;
+					background-color: #fce0de;
+					font-family: Georgia serif;
+					
+				}
+				
+				input[type="submit"]:hover{
+					
+					background-color: #deb4b1;
+					
+				}
+				
+				.signupContainer input[type="submit"]{
+					
+					padding: 0.5%;
+					margin-left: 80%;
+					width: 20%;
+					background-color: #ebf8fa;
+					font-family: Georgia serif;
+					
+				}
+				
+				.signupContainer input[type="submit"]:hover{
+					
+					background-color: #e3e9fc;
+					
+				}
+				
+				.lNav .container{
+					
+					width: 70%;
+					margin: 2.5% auto;
+					
+				}
+				
+				.loginContainer{
+					
+					background-color: #ebf8fa;
+					border: 3.5px ridge black;
+					width: 80%;
+					padding: 4%;
+					margin: 20% auto 2% auto;
+					
+				}
+				
+				.signupContainer{
+					
+					background-color: #fad9d7;
+					border: 3.5px ridge black;
+					width: 80%;
+					padding: 4%;
+					margin: 20% auto 10% auto;
+					
+				}
+				
+				form{
+					
+					font-family: Georgia serif;
+				}
+				
+				
+</style>

@@ -1,0 +1,375 @@
+/*Total Page Settings*/
+html {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    /* overflow-x: hidden; */
+    background-image: url(../images/DownloadBackground.png);
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+    /* position: relative; */
+}
+
+/*Generic Flex Box Rules*/
+.column {
+    display: flex;
+    flex-direction: column;	
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Top Button Settings*/
+.buttonGrid {
+    background-color: black;
+    width: 105%;   
+}
+
+.topButtons {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, serif;
+    padding: 0.5em 1.3em;
+    position: relative;
+    white-space: nowrap;
+    margin-right: 1.0em;
+    float: left;
+    text-decoration: none;
+}
+    
+.topButtons:hover {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 0.5em 1.3em;
+    position: relative;
+    white-space: nowrap;
+}
+
+/*Header Settings*/
+header {
+    background-color: black;
+}
+
+/*Middle Page Segment*/
+nav {
+    padding: 1%;
+    /* background-image: url('../images/DownloadBackground.png');		 */
+    background-size: cover;
+    width: 100%;
+}
+
+.announcements {
+    border: 6px solid;
+    border-image: url('../images/border.png') 25% round;
+    padding: 0.5em 5em 0.5em 2.5em;
+    background-color: #d4c081;
+    font-family: Georgia, serif;
+    width: 70%;	
+    margin-right: auto;
+    margin-left: 2em;
+}
+
+/*Footer Section*/
+footer {
+    position: relative;
+    background-color: black;
+    box-shadow: 0 50vh 0 50vh #000;
+}
+
+footer .row div:nth-child(3) p br {
+    display: none;
+}
+
+/*Links to Other Page Section*/
+.links{
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    margin: 5%;
+    margin-top: 1.5%;
+    align-items: center;
+    white-space: nowrap;
+    width: 5%;
+    z-index: 1;
+}
+
+#creditLink {
+    color: #c48b2f;
+    margin-left: 3em;
+}
+
+#creditLink:hover {
+    color: #8f641f
+}
+
+.link {
+    color: #c48b2f;
+    border-radius: inherit;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 130%;
+    font-family: Georgia, serif;
+}
+
+.link:hover {
+    color: #8f641f
+}
+
+.main {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+#bioContent {
+    font-size: larger;
+    color: black;
+    /* width: 100%; */
+}
+
+.bioContainer {
+    width: 75%;
+    font-size: medium;
+    
+}
+
+#imgContainer {
+    width: 30%;
+    margin-right: 10em;
+}
+
+#headshot {
+    padding: 1% 1% 1% 1%;
+    width: 30em;
+    background-color: rgb(128, 41, 41);
+    outline: 2px solid;
+    border: 3px solid;
+    border-image: url('../images/border.png') 25% round;
+}
+
+#resume {
+    width: 100%;
+    height: 98%;
+    border: 5px solid;
+}
+
+/*Company Members Acknowledgement*/
+.honor{
+    color: white;
+    width: 30%;    
+    display: flex;
+    font-size: 120%;
+    font-family: Georgia, serif;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+#frame {
+    display: flex;
+    width: 60em;
+    height: 80em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outerProject {
+    list-style-image: url(../images/bullet.png);
+    font-size: larger;
+}
+
+.project {
+    color: black;
+    padding: 1%;
+}
+
+.innerProject {
+    list-style-image: url(../images/subBullet.png);
+    font-size: medium;
+}
+
+.description {
+    color: black;
+}
+
+.projectLink a{
+    color: blue;
+}
+
+.projectLink a:hover {
+    color: rgb(121, 45, 13);
+}
+
+.skills {
+    color: black;
+}
+
+.shortcut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#shortcuttitle {
+    text-decoration: underline; 
+    color: white; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.headTitle {
+    text-decoration: underline; 
+    color:white; 
+}
+
+@media(max-width: 1240px) {
+    
+    .bioContainer {
+        width: 60%;
+    }
+
+}
+@media(max-width: 1150px) {
+    #imgContainer {
+        display: none;
+    }
+
+    footer {
+        margin-top: 15%;
+    }
+    .bioContainer {
+        width: 70%;
+        font-size: medium;
+    }
+}
+
+@media(max-width: 1000px) {
+    footer .row div:nth-child(3) p br {
+        display: unset;
+    }
+
+    footer {
+        margin-top: 7em;
+    }
+}
+
+@media(max-width: 800px){
+
+    .bioContainer {
+        width: 60%;
+        font-size: medium;
+    }
+    
+    footer .row div:nth-child(2){
+        padding-left: 4em;
+    }
+
+    footer .row div:nth-child(3) p br{
+        display: unset;
+    }
+    
+    #shortcuttitle  {
+        font-size: 160%;
+        padding-left: 20%;
+    }
+
+    .honor, .links{
+        /* margin-left: 2em; */
+        padding-left: 5%;
+        font-size: 100%;   
+    }
+}
+
+
+@media(max-width: 750px) {
+    
+    /* .links {
+        padding-left: 5%;
+    } */
+
+    #bioContent {
+        font-size: large;
+    }
+
+    footer {
+        margin-top: 3em;
+    }
+    
+}
+
+@media(max-width: 600px) {
+    #bioContent {
+        font-size: medium;
+    }
+}
+
+/* @media(max-width: 475px){
+
+    .homeC{
+        flex-direction: column;
+        background-color: black;
+        justify-content: space-between;
+        align-items: space-between;
+        
+    }
+    
+    .home{
+        border: ridge;
+        background-color:  #c48b2f;
+        color: white;
+        font-size: 24px;
+        width: 20%;
+        text-align: left;
+        margin-top: 2.0em;
+        margin-left: 0.5em;
+        padding-left: 10%;
+        padding-right: 25%;
+        border-radius: 1em;
+        flex-direction: column;
+        z-index: 10;
+            
+    }
+    
+    .home:hover{
+        border: none;
+        background-color: white;
+        color: black;
+        margin-top: 2.0em;
+        margin-left: 0.5em;
+        padding-left: 10%;
+        padding-right: 25%;
+        border-radius: 1em;
+        position: relative;
+        white-space: nowrap;
+
+    }
+
+    .hHeader{
+        height: 100vh;
+    }
+    
+    .banner{
+        display: none;
+        
+    }
+    
+    .hNav{
+        display: none;
+    }
+    
+    .hFooter{
+        display: none;
+        
+    }
+} */
