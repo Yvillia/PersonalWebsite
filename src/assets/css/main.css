@@ -230,6 +230,265 @@ footer .row div:nth-child(3) p br {
   color: white;
 }
 
+* {
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  margin-top: -0.5em;
+  background: #403a3e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #be5869, #403a3e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #be5869, #403a3e);
+}
+
+.buttonRow {
+  border-radius: 50px;
+  width: 100%;
+}
+
+.chat-block {
+  width: 90%;
+}
+
+.chatButton {
+  background-image: url(images/chatIcon.png);
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  position: absolute;
+  border: 1px rgb(133, 125, 125);
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  padding: 30px;
+  z-index: 2;
+  margin-left: -4.3em;
+  border-right: none;
+}
+
+.chat-list {
+  height: 88% !important;
+  display: inline-flex;
+  position: fixed;
+  border-radius: 3px;
+  bottom: 0;
+  right: -2.3em;
+  z-index: 1;
+}
+
+.chat-sep {
+  /* Courtesy of https://uigradients.com/#Atlas */
+  background: #feac5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #9c3734
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #9c3734
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  z-index: 1;
+  width: 100%;
+}
+
+.chatStyle {
+  resize: none;
+  overflow-y: auto;
+  border: #343a40;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.chat-title {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+}
+
+.editorArea {
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  z-index: 0;
+}
+
+.editorSplit {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* .footer {
+    display: block;
+    background-color: black;
+    position: relative;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    box-shadow: 50vw;
+  } */
+
+.InformationBody {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+}
+
+.SettingsBody {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+}
+
+.text {
+  color: #e7e7e7;
+}
+
+.innerRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Home {
+  background: #403a3e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #be5869, #403a3e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #be5869,
+    #403a3e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  /* padding-bottom: 4.3%; */
+}
+
+.MenuBtn {
+  margin-right: 3%;
+}
+
+.NaviBar:nth-of-type(1) {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.NaviBar:nth-of-type(2) {
+  border-radius: 0px 0px 15px 15px;
+}
+
+.logout {
+  display: inline-block;
+  position: absolute;
+  right: 2%;
+}
+
+.account {
+  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow-y: auto;
+  background-image: url("images/login_bg.png");
+  background-repeat: no-repeat;
+  background-size: 65% 85%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.account__wrapper {
+  margin: auto;
+  padding: 0;
+  background-color: #343a4005;
+}
+
+.account__card {
+  background-color: rgba(255, 255, 255, 0.116);
+  margin: 30 auto auto auto;
+  padding: 70px 50px;
+  width: 400px;
+}
+
+.account__profile {
+  text-align: center;
+}
+
+.account__avatar {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #343a40;
+}
+.account__name {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 15px;
+  margin: 5px 0 5px 0px;
+}
+.account__sub {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #656262;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+@media screen and (max-width: 520px) {
+  .account__card {
+    padding: 35px 30px;
+  }
+}
+
+.account__btn {
+  width: 100%;
+  margin-right: 0;
+  font-size: 50%;
+}
+
+.container-fluid {
+  position: sticky;
+  margin-top: -1em;
+  height: 105vh;
+}
+
+.login {
+  position: fixed;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.errorPage {
+  height: 100vh;
+  width: 50%;
+  background: navy;
+  min-height: 100vh;
+  display: flex;
+  overflow-y: auto;
+}
+
+.goToHome {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 18%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 200px;
+}
+
 @media (max-width: 1240px) {
   .bioContainer {
     width: 60%;
