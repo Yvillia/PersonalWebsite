@@ -1,19 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/home.js";
+import About from "./pages/about.js";
 import Affiliations from "./pages/affiliations.js";
 import Projects from "./pages/projects.js";
 import Resume from "./pages/resume.js";
 import Games from "./pages/games.js";
 import Lost from "./pages/404.js";
 
-class Routes extends React.Component {
+export default class Routes extends React.Component {
   render() {
     return (
       <Router>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/Home" exact component={Home} />
+          <Route path="/" exact component={About} />
+          <Route path="/About" exact component={About} />
           <Route path="/Affiliations" exact component={Affiliations} />
           <Route path="/Projects" exact component={Projects} />
           <Route path="/Resume" exact component={Resume} />
@@ -24,5 +24,3 @@ class Routes extends React.Component {
     );
   }
 }
-
-export default Routes;
