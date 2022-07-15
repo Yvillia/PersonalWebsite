@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+
+    margin-left: 35%;
+    margin-right: 10%;
+    margin-top: 20%;
+}
+
+html {
+    background-color: #d8dede;
+    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+    background-repeat: round;
+}
+
+span {
+    font-size: x-large;
+}
+
+.general {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+#box {
+    text-align: center;
+    background-color: white;
+    border: 3px black ridge;
+    border-radius: 30px;
+    height: 10%;
+    width: 50%;
+    padding: 2%;
+}

@@ -1,0 +1,8 @@
+let class2_ = ["Math 111", "Psychology 110", "English 110", "Physics 211", "Biology 205", "Chemistry 132", "History 112"]
+let day2 = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+let professor2 = ["Lightning McQueen", "Wall-E","Carl", "Mike & Sulley", "Remy", "Buzz Lightyear", "Marlin"]
+let online2 = ["Online", "In Person"]
+document.getElementById("class_").textContent = class2_[Math.floor(Math.random() * class2_.length)]
+document.getElementById("professor").textContent = professor2[Math.floor(Math.random() * professor2.length)]
+document.getElementById("online").textContent = online2[Math.floor(Math.random() * online2.length)]
+document.getElementById("day").textContent = day2[Math.floor(Math.random() * day2.length)]
