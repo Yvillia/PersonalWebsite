@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href="tutortrain.css"> 
+    </head>
+    <body>
+        <span>My name is Chel and my student log is Chel123 :)! I'm taking </span>
+        <span id="class_"></span>
+        <span> with </span>
+        <span id="professor"></span>
+        <span> and I really need an </span>
+        <span id="online"></span>
+        <span> appointment on </span>
+        <span id="day"></span>
+    </body>
+    <script>
+        let class_ = ["Math 111", "Psychology 110", "English 110", "Physics 211", "Biology 205", "Chemistry 132", "History 112"]
+        let day = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        let professor = ["Lightning McQueen", "Wall-E","Carl", "Mike & Sulley", "Remy", "Buzz Lightyear", "Marlin"]
+        let online = ["Online", "In Person"]
+        document.getElementById("class_").content = class_[Math.random() % class_.length]
+        document.getElementById("professor").content = professor[Math.random() % professor.length]
+        document.getElementById("online").content = online[Math.random() % online.length]
+        document.getElementById("day").content = day[Math.random() % day.length]
+    </script>
+</html>
